@@ -26,6 +26,9 @@ import Cartdetails from './Components/Cartdetails';
 // import { Provider } from 'react-redux';
 import ErrorPage from './Components/ErrorPage';
 import Orderpage from './Components/Orderpage';
+import Addtocart from './Components/Addtocart';
+
+// import Product from './Components/Product';
 
 function App() {
   return (
@@ -51,7 +54,8 @@ function App() {
           <Route path="/cartdetails" element={<Cartdetails />} />
           <Route path="*" element={<ErrorPage />} />
           <Route path="/orderpage" element={<Orderpage />} />
-          {/* <Route store={store} element={<Provider />} /> */}
+          <Route path="/Addtocart" element={<Addtocart />} />
+          {/* <Route path="/Product" element={<Product />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

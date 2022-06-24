@@ -1,9 +1,12 @@
-export const ADD = (item) => {
+
+// Add item
+export const Add = (item) => {
     return {
         type: "ADD_CART",
-        payload: item
+        paload: item
     }
 }
+
 
 // remove iteams
 export const DLT = (id) => {
